@@ -23,3 +23,71 @@
 html {
     font-family: 'Amiko';
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+:root {
+    --blue: #2274A5;
+    --yellow: #EAC435;
+    --light-gray: #686868;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+.button {
+    background-color: var(--yellow);
+    color: var(--white) ;
+    padding: .4em;
+    border-radius: 2px;
+}
+
+.tophead {
+    display: flex;
+    justify-content: space-around;
+}
+.tophead__logo {
+    width: 80px;
+}
+
+.tophead__right {
+    text-align: end;
+}
+.tophead_R__heading {
+    font-size: 18px;
+    color: var(--blue);
+}
+
+
+.bothead__heading {
+    color: var(--yellow);
+    padding: .4em;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.major__section {
+    padding: 1em;
+}
+
+.section__heading {
+    position: relative;
+}
+.section__heading::before {
+    content: "";
+    background-color: var(--blue);
+    width: 48px;
+    height: 6px;
+    display: block;
+    margin: .5em;
+    left: -12px;
+    top: -20px;
+    position: absolute;
+}
