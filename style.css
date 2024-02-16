@@ -22,6 +22,7 @@
 
 html {
     font-family: 'Amiko';
+    font-weight: 700;
 }
 
 img {
@@ -90,4 +91,14 @@ a {
     left: -12px;
     top: -20px;
     position: absolute;
+}
+
+
+.imgbutton {
+    max-width: 450px;
+    filter: drop-shadow(-20px -16px 0px var(--blue)) ;
+}
+
+.fig__cap {
+    padding: 1em 0;
 }
