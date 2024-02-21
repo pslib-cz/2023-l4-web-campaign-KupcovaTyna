@@ -28,6 +28,7 @@ html {
 img {
     width: 100%;
     height: auto;
+    margin: 1em 0;
 }
 
 a {
@@ -78,6 +79,11 @@ a {
     padding: 1em;
 }
 
+.section__figure {
+    margin: 1em;
+    max-width: 300px;
+}
+
 .section__heading {
     position: relative;
 }
@@ -101,4 +107,38 @@ a {
 
 .fig__cap {
     padding: 1em 0;
+}
+
+.section--black {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.section__heading--yellow {
+    color: var(--yellow);
+}
+
+.section__heading--yellow::before {
+    background-color: var(--yellow);
+}
+
+.imgbutton--yellow {
+    filter: drop-shadow(20px 16px 0px var(--yellow));
+}
+
+
+.article__heading {
+    position: relative;
+}
+.article__heading--yellowblock::before {
+    content: "";
+    background-color: var(--yellow);
+    width: 80px;
+    height: 6px;
+    display: block;
+    margin: .5em;
+    left: -12px;
+    bottom: -20px;
+    position: absolute;
+
 }
