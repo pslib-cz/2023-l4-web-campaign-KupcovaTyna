@@ -119,7 +119,7 @@ a {
 }
 
 .section__heading--yellow::before {
-    background-color: var(--yellow);
+    display: none;
 }
 
 .imgbutton--yellow {
@@ -129,6 +129,7 @@ a {
 
 .article__heading {
     position: relative;
+    margin: 2em 1em;
 }
 .article__heading--yellowblock::before {
     content: "";
@@ -141,4 +142,19 @@ a {
     bottom: -20px;
     position: absolute;
 
+}
+
+.article__part {
+    max-width: 60vw;
+  
+}
+
+.article__part--star::after {
+    content: url(./icons/Star_circle.svg);
+}
+
+.footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1em;
 }
